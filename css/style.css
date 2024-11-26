@@ -1,0 +1,17 @@
+.parallax {
+    background-image: url('img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+
+.button:hover {
+    background-color: #555;
+    transition: background-color 0.5s ease;
+}
+
+
+body {
+    background: url('img/texture.png') repeat;
+}
