@@ -77,3 +77,19 @@ function scroll(){
    }
 
 }
+
+
+
+function updateStatus(){var productChoice = document.getElementById('product-info-radio');
+var prodChoiceLabel = document.getElementById('product-info-label');
+var prodInput = document.getElementById('productId');
+ 
+if (productChoice.checked){
+    prodChoiceLabel.className = 'form-label visible';
+    prodInput.className = 'form-control visible';
+}
+else{
+    prodChoiceLabel.className = 'hidden';
+    prodInput.className = 'hidden';
+}
+}

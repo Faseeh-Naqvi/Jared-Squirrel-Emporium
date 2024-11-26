@@ -81,7 +81,7 @@
                     <div class="row mt-4">
                         
                         <div class="col-md-4 text-center">
-                            <img id="ceo" src="img/ceo.png" alt="Profile of Jared" class=" about-photo rounded-circle">
+                            <img id="ceo" src="img/ceo.png" title="That's me!" alt="Profile of Jared" class=" about-photo rounded-circle">
                             <h4 class="mt-3">Faseeh N.</h4>
                             <p><strong>Founder & Squirrel Enthusiast</strong></p>
                             <p>
@@ -92,23 +92,25 @@
                         </div>
                         
                         <div class="col-md-4 text-center">
-                            <img src="img/child.png" alt="Profile of Alex" class="about-photo rounded-circle">
+                            <img title="Kindergartener playing" src="img/AlexImage.jpg"
+                             alt="Profile of Alex" class="about-photo rounded-circle">
                             <h4 class="mt-3">Alex T.</h4>
                             <p><strong>Operations Manager</strong></p>
                             <p>
                                 Alex is the powerhouse of the company. During Lunch recess and after school, she ensures everything runs smoothly at the emporium. From inventory 
-                                management to customer satisfaction, Alex's dedication keeps our squirrels 
+                                management to customer satisfaction, Alex's relentless dedication keeps our squirrels 
                                 and customers happy.
                             </p>
                         </div>
                         
                         <div class="col-md-4 text-center">
-                            <img src="img/woman.jpeg" alt="Profile of Mia" class=" about-photo rounded-circle">
-                            <h4 class="mt-3">Mia L.</h4>
+                            <img src="img/boredGuy.png" title="bored man sits at desk" alt="Profile of Mia" class=" about-photo rounded-circle">
+                            <h4 class="mt-3">Jackson E.</h4>
                             <p><strong>Creative Director</strong></p>
                             <p>
-                                Mia's creativity is behind our wonderful branding and marketing. She loves designing 
-                                campaigns that capture the unique personalities of our squirrel companions.
+                                Jackson's creativity is behind our wonderful branding and marketing. He loves designing 
+                                campaigns that capture the unique personalities of our squirrel companions. His Entusiasm 
+                                and creativity inspires us all.
                             </p>
                         </div>
                     </div>
@@ -161,30 +163,70 @@
             
         </section>
         
-        <section id="contact">
-            <a name="contact"></a>
+        <section id="contact" class="py-5">
             <div class="container text-center">
                 <h2>Contact Us</h2>
                 <p>Have questions or want to adopt a squirrel? Reach out to us!</p>
-                <form class="mt-4">
+                
+                <form class="mt-4" id="contact-form">
+                    
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
                     </div>
+        
+                    
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="123 456 7890"   >
                     </div>
+        
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Reason for Message</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="reason" id="general" value="general" onchange="updateStatus()">
+                            <label class="form-check-label" for="general">General Inquiry</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="reason" id="pricing" value="pricing"onchange="updateStatus()">
+                            <label class="form-check-label" for="pricing">Pricing</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="reason" id="product-info-radio" value="product" onchange="updateStatus()">
+                            <label class="form-check-label" for="product-info">Product Info</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="reason" id="shipping" value="shipping" onchange="updateStatus()">
+                            <label class="form-check-label" for="shipping">Shipping</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="reason" id="other" value="other" onchange="updateStatus()">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+        
+                    <div id="Hider" class="visible">
+                    <div class="mb-3" id="product-id-field">
+                        <label for="productId" class="form-label" id="product-info-label">Product ID</label>
+                        <input type="text" class="form-control" id="productId" placeholder="Enter Product ID">
+                    </div>
+                    </div>
+                    
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+        
+                    
+                    <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
                 </form>
             </div>
-            <div id="space"></div>
         </section>
         
+
+
+
         <section id="references">
             <a name="references"></a>
             <div class="container text-center">

@@ -1,10 +1,9 @@
-.parallax {
-    background-image: url('img/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
+.hidden{
+    display: none;
 }
-
+.visible{
+    display: block;
+}
 #banner{ 
     width: 100%; 
     margin-top: 50px;
@@ -16,7 +15,7 @@
 }
 .button:hover {
     background-color: #555;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ;
 }
 .parallax-img{
     width: 100%;
@@ -93,10 +92,10 @@ width: auto;
 
 @keyframes moveUp{
     0%{ padding-top:0px;}
-    100%{padding-top:200px;}
+    100%{padding-top:200px; padding-bottom: 100px;}
 }
 
 #back-to-top:hover{
     position: relative;
-    animation: moveUp 5s;
+    animation: moveUp 3s;
 }
