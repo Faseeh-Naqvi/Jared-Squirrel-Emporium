@@ -41,7 +41,52 @@ function dayHello(){
 dayHello();
 
 
-sc
+function scroll(){
+    t= window.scrollY;
+    para= document.getElementById('para');
+    m=-.25;
+    b= 0;
+    newY = m*t + b;
+    para.style.backgroundPositionY = newY + 'px';
+
+
+
+
+    var t = window.scrollY;
+   var nav= document.getElementById('nav');
+
+   var l1= document.getElementById('about-link');
+   var l2= document.getElementById('products-link');
+   var l3= document.getElementById('contact-link');
+   var l4= document.getElementById('references-link');
+
+
+   var s1= document.getElementById('about');
+   var s2= document.getElementById('products');
+   var s3= document.getElementById('contact');
+   var s4= document.getElementById('references');
+
+   var t1= s1.offsetTop;
+   var t2= s2.offsetTop;
+   var t3= s3.offsetTop;
+   var t4= s4.offsetTop;
+
+    l1.style.fontStyle= 'normal';
+    l2.style.fontStyle= 'normal';   
+    l3.style.fontStyle= 'normal';
+    l4.style.fontStyle= 'normal';
+
+   if(t>t4){
+    l4.style.fontStyle= 'italic';
+   } else if (t> t3){
+    l3.style.fontStyle= 'italic';
+   } else if (t> t2){
+    l2.style.fontStyle= 'italic';
+   }    else if (t> t1){
+    l1.style.fontStyle= 'italic';
+   }
+
+}
 
 
 

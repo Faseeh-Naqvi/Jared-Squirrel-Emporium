@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
-<body>
+<body onscroll="scroll();sfire();">
     <header id="top">
         <img id="banner" src="./img/Squirrel_Banner.png" title="banner" alt="Jared's Squirrel Emporium">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -22,21 +22,22 @@
               <ul class="navbar-nav me-auto">
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
+                  <a id="about-link" class="nav-link" href="#about">About</a>
                 </li>
           
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="#products">Products</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        
-                  </ul>
+                  <a id="products-link" class="nav-link" href="#products">Products</a>
                 </li>
           
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a id="contact-link" class="nav-link" href="#contact">Contact</a>
                 </li>
+
+                <li class="nav-item">
+                    <a id="references-link" class="nav-link" href="#references">References</a>
+                  </li>
         
              
             </div>
@@ -52,37 +53,38 @@
                 <h2>About Us</h2>
                 <p>We aim to connect squirrel enthusiasts with the most quirky and adorable squirrels in the world.</p>
                 
-                    <div class="parallax-img" id="para">
-                        
-                    </div>
+                    <div id="para" class="parallax-img" ></div>
+
             </div>
+            <div id="space"></div>
         </section>
         
         <section id="products" >
             <div class="container">
                 <h2 class="text-center">Our Products</h2>
                 <p class="text-center">Explore our range of squirrel companions and accessories!</p>
-                <div class="row text-center mt-4">
+                <div  class="row text-center mt-4">
                     <!-- Product 1 -->
                     <div class="col-md-4">
-                        <img src="https://via.placeholder.com/200" alt="Domestic Squirrel" class="img-fluid rounded">
+                        <img src="https://via.placeholder.com/200" title="Domestic Squirrel" alt="Domestic Squirrel" class="img-fluid rounded">
                         <h3 class="mt-2">Domestic Squirrels</h3>
                         <p>Friendly and perfect for cuddles!</p>
                     </div>
                     <!-- Product 2 -->
                     <div class="col-md-4">
-                        <img src="https://via.placeholder.com/200" alt="Exotic Squirrel" class="img-fluid rounded">
+                        <img src="https://via.placeholder.com/200" title="Exotic Squirrel" alt="Exotic Squirrel" class="img-fluid rounded">
                         <h3 class="mt-2">Exotic Squirrels</h3>
                         <p>Unique and rare companions.</p>
                     </div>
                     <!-- Product 3 -->
                     <div class="col-md-4">
-                        <img src="https://via.placeholder.com/200" alt="Squirrel Accessories" class="img-fluid rounded">
+                        <img src="https://via.placeholder.com/200" title="Robot Squirrel" alt="Robot Squirrel" class="img-fluid rounded">
                         <h3 class="mt-2">Squirrel Accessories</h3>
                         <p>Treats, habitats, and toys!</p>
                     </div>
                 </div>
             </div>
+            <div id="space"></div>
         </section>
         
         <section id="contact">
@@ -105,9 +107,10 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
+            <div id="space"></div>
         </section>
         
-        <footer id="references">
+        <section id="references">
             <div class="container text-center">
                 <h4>References</h4>
                 <ul style="list-style: none; padding: 0;">
@@ -116,7 +119,8 @@
                 </ul>
                 <p>Copyright © 2024 Jared's Squirrel Emporium. All rights reserved.</p>
             </div>
-        </footer>
+            <div id="space"></div>
+        </section>
         
         <button id="back-to-top" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px;">Top</button>
         
