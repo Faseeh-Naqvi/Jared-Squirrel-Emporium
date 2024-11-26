@@ -66,14 +66,24 @@ function scroll(){
     l3.style.fontStyle= 'normal';
     l4.style.fontStyle= 'normal';
 
+    l1.style.fontWeight= 'normal';
+    l2.style.fontWeight= 'normal';  
+    l3.style.fontWeight= 'normal';
+    l4.style.fontWeight= 'normal';
+
+
    if(t>t4){
     l4.style.fontStyle= 'italic';
+    l4.style.fontWeight= 'bold';
    } else if (t> t3){
     l3.style.fontStyle= 'italic';
+    l3.style.fontWeight= 'bold';
    } else if (t> t2){
     l2.style.fontStyle= 'italic';
+    l2.style.fontWeight= 'bold';
    }    else if (t> t1){
     l1.style.fontStyle= 'italic';
+    l1.style.fontWeight= 'bold';
    }
 
 }

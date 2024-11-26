@@ -101,7 +101,9 @@ width: auto;
 }
 
 
-/* References Section Styling */
+
+
+
 .references-section {
     background-color: #8a7f71; /* Light beige background */
 }
@@ -133,4 +135,8 @@ width: auto;
 }
 .ref-contain{
     background-color: blanchedalmond;
+}
+
+.refDiv{
+    padding-bottom: 250px;
 }
