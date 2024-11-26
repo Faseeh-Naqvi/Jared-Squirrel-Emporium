@@ -28,7 +28,9 @@
     
 }
 
-
+.about_description{
+    text-align: left;
+}
 .navbar-dark{
     background-color: #7c6a5e;
 }
@@ -58,4 +60,16 @@ section {
 }
 #space{
     padding-bottom: 600px;
+}
+#Squirrel-about{
+height: 200px;
+width: auto;
+}
+.about-photo{
+    height: 200px;
+    width: auto;
+}
+#ceo{
+    height: 200px;
+    width: 200px;
 }

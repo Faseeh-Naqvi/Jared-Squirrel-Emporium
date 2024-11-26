@@ -1,13 +1,3 @@
-window.addEventListener('scroll', () => {
-    const elements = document.querySelectorAll('.scrollfire');
-    elements.forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight) {
-            el.classList.add('visible');
-        }
-    });
-});
-
-
 const today = new Date().getDay();
 function dayHello(){
     var today = new Date().getDay();
