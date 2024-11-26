@@ -132,7 +132,7 @@
                         <img src="https://images.pexels.com/photos/417328/pexels-photo-417328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Domestic Squirrel" alt="Domestic Squirrel" class=" product-image rounded">
                         <h3 class="mt-2">Domestic Squirrels</h3>
                         <p>Friendly and perfect for cuddles!</p>
-                        <p>SC: 2213FFGH</p>
+                        <p>  PID: 2213FFGH</p>
                     <button class=" buyButton btn btn-dark" >Add to cart</button>
                     </div>
                     <!-- Product 2 -->
@@ -140,7 +140,7 @@
                         <img src="https://images.pexels.com/photos/2833216/pexels-photo-2833216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Exotic Squirrel" alt="Exotic Squirrel" class=" product-image rounded">
                         <h3 class="mt-2">Exotic Squirrels</h3>
                         <p>Unique and rare companions.</p>
-                        <p>SC: 2224RFRH</p>
+                        <p>  PID: 2224RFRH</p>
                         <button class=" buyButton btn btn-dark" >Add to cart</button>
                     </div>
                     <!-- Product 3 -->
@@ -148,14 +148,14 @@
                         <img src="img/robo-squirrel.png" title="Robot Squirrel" alt="Robot Squirrel" class=" product-image rounded">
                         <h3 class="mt-2">Robot Squirrel</h3>
                         <p>Im scared, we will pay you to buy this off us.</p>
-                        <p>SC: 0007SFFH</p>
+                        <p>  PID: 0007SFFH</p>
                         <button class=" buyButton btn btn-dark" >Add to cart</button>
                     </div>
                     <div class="product-list col-md-4">
                         <img src="img/accessories.png" title="Squirrel Accessories" alt="Squirrel Accessories" class=" product-image rounded">
                         <h3 class="mt-2">Squirrel Accessories</h3>
                         <p>Treats, habitats, and toys!</p>
-                        <p>SC: 2222CFHE</p>
+                        <p>  PID: 2222CFHE</p>
                         <button class=" buyButton btn btn-dark" >Add to cart</button>
                     </div>
                 </div>
@@ -172,16 +172,14 @@
                     
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" onblur="validateName()">
                     </div>
-        
-                    
+            
                     <div class="mb-3">
                         <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumber" placeholder="123 456 7890"   >
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="123 456 7890" onblur="validatePhoneNumber()">
                     </div>
-        
-                    
+            
                     <div class="mb-3">
                         <label class="form-label">Reason for Message</label>
                         <div class="form-check">
@@ -189,12 +187,12 @@
                             <label class="form-check-label" for="general">General Inquiry</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="pricing" value="pricing"onchange="updateStatus()">
+                            <input class="form-check-input" type="radio" name="reason" id="pricing" value="pricing" onchange="updateStatus()">
                             <label class="form-check-label" for="pricing">Pricing</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="reason" id="product-info-radio" value="product" onchange="updateStatus()">
-                            <label class="form-check-label" for="product-info">Product Info</label>
+                            <label class="form-check-label" for="product-info-radio">Product Info</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="reason" id="shipping" value="shipping" onchange="updateStatus()">
@@ -207,22 +205,22 @@
                     </div>
         
                     <div id="Hider" class="visible">
-                    <div class="mb-3" id="product-id-field">
-                        <label for="productId" class="form-label" id="product-info-label">Product ID</label>
-                        <input type="text" class="form-control" id="productId" placeholder="Enter Product ID">
-                    </div>
+                        <div class="mb-3" id="product-id-field">
+                            <label for="productId" class="form-label" id="product-info-label">Product ID</label>
+                            <input type="text" class="form-control" id="productId" placeholder="Enter Product ID" onblur="validateProductID()">
+                        </div>
                     </div>
                     
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" onblur="validateMessage()"></textarea>
                     </div>
-        
-                    
-                    <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
+            
+                    <button type="button" class="btn btn-primary" id="send-button">Send</button>
                 </form>
             </div>
         </section>
+        
         
 
 
