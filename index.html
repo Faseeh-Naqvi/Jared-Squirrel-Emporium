@@ -6,26 +6,126 @@
     <title>🐿️ Jared's Squirrel Emporium 🐿️</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
     <header id="top">
-        <img id="banner" src="./img/Squirrel_Banner.png" alt="Jared's Squirrel Emporium">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact</a>
-            <a href="#references">References</a>
-        </nav>
-    </header>
-    <section id="about">
-        <p>We aim to connect squirrel enthusiasts with the most quirky and adorable squirrels in the world.</p>
-        <img src="https://images.pexels.com/photos/314865/pexels-photo-314865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image of squirrel standing on top of some dead leaves and twigs">
+        <img id="banner" src="./img/Squirrel_Banner.png" title="banner" alt="Jared's Squirrel Emporium">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#top">Jared's Squirrel Emporium</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+          
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="#products">Products</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                  </ul>
+                </li>
+          
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+        
+             
+            </div>
+          </nav>
+
+          <div class="parallax-text" id="para"></div>
+          <h1 id="dynamic-message"></h1>
+
+        </Header>
 
 
-    </section>
-    <section id="products">...</section>
-    <section id="contact">...</section>
-    <footer id="references">...</footer>
-    <button id="back-to-top">Top</button>
+          <section id="about">
+            <div class="container text-center">
+                <h2>About Us</h2>
+                <p>We aim to connect squirrel enthusiasts with the most quirky and adorable squirrels in the world.</p>
+                <img src="https://images.pexels.com/photos/314865/pexels-photo-314865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="Image of squirrel standing on top of some dead leaves and twigs" 
+                    class="img-fluid rounded" 
+                    style="max-width: 500px; margin-top: 20px;">
+            </div>
+        </section>
+        
+        <section id="products" >
+            <div class="container">
+                <h2 class="text-center">Our Products</h2>
+                <p class="text-center">Explore our range of squirrel companions and accessories!</p>
+                <div class="row text-center mt-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/200" alt="Domestic Squirrel" class="img-fluid rounded">
+                        <h3 class="mt-2">Domestic Squirrels</h3>
+                        <p>Friendly and perfect for cuddles!</p>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/200" alt="Exotic Squirrel" class="img-fluid rounded">
+                        <h3 class="mt-2">Exotic Squirrels</h3>
+                        <p>Unique and rare companions.</p>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-4">
+                        <img src="https://via.placeholder.com/200" alt="Squirrel Accessories" class="img-fluid rounded">
+                        <h3 class="mt-2">Squirrel Accessories</h3>
+                        <p>Treats, habitats, and toys!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container text-center">
+                <h2>Contact Us</h2>
+                <p>Have questions or want to adopt a squirrel? Reach out to us!</p>
+                <form class="mt-4">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer id="references">
+            <div class="container text-center">
+                <h4>References</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="https://www.pexels.com" target="_blank" class="text-light">Pexels</a> (Image Sources)</li>
+                    <li>No squirrels were harmed in the making of this website</li>
+                </ul>
+                <p>Copyright © 2024 Jared's Squirrel Emporium. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <button id="back-to-top" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px;">Top</button>
+        
+        
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

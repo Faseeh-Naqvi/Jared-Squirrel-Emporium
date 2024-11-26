@@ -7,13 +7,37 @@
 
 #banner{ 
     width: 100%; 
+    margin-top: 50px;
+}
+#dynamic-message{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .button:hover {
     background-color: #555;
     transition: background-color 0.5s ease;
 }
 
-
+.navbar-dark{
+    background-color: #7c6a5e;
+}
 body {
     background: url('img/texture.png') repeat;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about,#contact{
+    background-color: #f9f4ef;
+}
+
+#references{
+    background-color: #7c6a5e; 
+    color: #f8f5f1;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
