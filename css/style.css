@@ -43,6 +43,14 @@ section {
     padding-bottom: 50px;
 }
 
+.buyButton:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: padding-left 1s;
+    transition: padding-right 1s;
+    
+}
+
 #about,#contact{
     background-color: #f9f4ef;
 }
@@ -75,4 +83,20 @@ width: auto;
 }
 .product-list{
     margin-top: 10px;
+}
+
+.product-image{
+    height: 200px;
+    width: auto;
+}
+
+
+@keyframes moveUp{
+    0%{ padding-top:0px;}
+    100%{padding-top:200px;}
+}
+
+#back-to-top:hover{
+    position: relative;
+    animation: moveUp 5s;
 }
