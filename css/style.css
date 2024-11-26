@@ -45,7 +45,12 @@ section {
     background-color: #f9f4ef;
 }
 
+#back-to-top{
+    bottom: 20px; 
+    right: 20px;
+}
 #references{
+    background-image: url('/img/always-grey.png');
     background-color: #7c6a5e; 
     color: #f8f5f1;
     padding-top: 30px;
