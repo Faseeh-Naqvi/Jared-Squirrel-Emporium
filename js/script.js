@@ -40,6 +40,11 @@ function dayHello(){
 }
 dayHello();
 
+
+sc
+
+
+
 var topper = document.getElementById('back-to-top');
 
 document.getElementById('back-to-top').addEventListener('click', () => {
