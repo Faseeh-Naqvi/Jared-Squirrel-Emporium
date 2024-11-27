@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 </head>
 <body onscroll="scroll();">
     <header>
@@ -16,315 +15,275 @@
         <img id="banner" src="./img/Squirrel_Banner.png" title="banner" alt="Jared's Squirrel Emporium">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand" href="#top">Jared's Squirrel Emporium</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <!-- Updated data attributes for Bootstrap 4 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto">
-                
-                <li class="nav-item">
-                  <a id="about-link" class="nav-link" href="#about">About</a>
-                </li>
-          
-                
-                <li class="nav-item ">
-                  <a id="products-link" class="nav-link" href="#products">Products</a>
-                </li>
-          
-                
-                <li class="nav-item">
-                  <a id="contact-link" class="nav-link" href="#contact">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                    <a id="references-link" class="nav-link" href="#references">References</a>
-                  </li>
-        
-             
-            </div>
-          </nav>
-
-          
-        <h1 id="dynamic-message"></h1>
-        </Header>
-
-
-            <section id="about" class="py-5" >
-                <a name="about"></a>
-                <div class="container text-center">
-                    <h2>About Us</h2>
-                    
-                    <div id="para" class="parallax-img" ></div>
-                    
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <p id="about_description">
-                                Named after the adopted father of our founder, Jared's Squirrel Emporium is dedicated to connecting squirrel enthusiasts with 
-                                the quirkiest and most adorable squirrels in the world. If you're looking 
-                                for a friendly companion, we've got you covered. Founded on the principles of love for squirrels and care 
-                                for their well-being, our emporium strives to bring joy to every squirrel lover's life.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <img id="Squirrel-about" src="https://images.pexels.com/photos/29451082/pexels-photo-29451082/free-photo-of-squirrel-in-autumn-tree-with-colorful-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 
-                            " alt="Squirrel on tree" title="Squirrel on tree" class=" rounded">
-                            <p class="mt-2">A playful squirrel enjoying its life.</p>
-                        </div>
-                    </div>
-                </div>
-            
-                
-                <div class="container mt-5">
-                    <h3 class="text-center">Meet Our Team</h3>
-                    <div class="row mt-4">
-                        
-                        <div class="col-md-4 text-center">
-                            <img id="ceo" src="img/ceo.png" title="That's me!" alt="Profile of Jared" class=" about-photo rounded-circle">
-                            <h4 class="mt-3">Faseeh N.</h4>
-                            <p><strong>Founder & Squirrel Enthusiast</strong></p>
-                            <p>
-                                Faseeh started this emporium in 2004 to share his lifelong passion for squirrels.
-                                At the age of 19, he was found by a family of squirrels and raised by them. 
-                                His mission is to help people find their perfect squirrel companions. 
-                            </p>
-                        </div>
-                        
-                        <div class="col-md-4 text-center">
-                            <img title="Kindergartener playing" src="img/AlexImage.jpg"
-                             alt="Profile of Alex" class="about-photo rounded-circle">
-                            <h4 class="mt-3">Alex T.</h4>
-                            <p><strong>Operations Manager</strong></p>
-                            <p>
-                                Alex is the powerhouse of the company. During Lunch recess and after school, she ensures everything runs smoothly at the emporium. From inventory 
-                                management to customer satisfaction, Alex's relentless dedication keeps our squirrels 
-                                and customers happy.
-                            </p>
-                        </div>
-                        
-                        <div class="col-md-4 text-center">
-                            <img src="img/boredGuy.png" title="bored man sits at desk" alt="Profile of Mia" class=" about-photo rounded-circle">
-                            <h4 class="mt-3">Jackson E.</h4>
-                            <p><strong>Creative Director</strong></p>
-                            <p>
-                                Jackson's creativity is behind our wonderful branding and marketing. He loves designing 
-                                campaigns that capture the unique personalities of our squirrel companions. His enthusiasm 
-                                and creativity inspires us all.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        
-        
-
-        
-        <section id="products" >
-            <a name="products"></a>
-            <div class="container">
-                <h2 class="text-center">Our Products</h2>
-                <p class="text-center">Explore our range of squirrel companions and accessories!</p>
-                <div  class="row text-center mt-4">
-                    <!-- Product 1 -->
-                    <div class="product-list col-md-4">
-                        <img src="https://images.pexels.com/photos/417328/pexels-photo-417328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Domestic Squirrel" alt="Domestic Squirrel" class=" product-image rounded">
-                        <h3 class="mt-2">Domestic Squirrels</h3>
-                        <p>Friendly and perfect for cuddles!</p>
-                        <p>  PID: 2213FFGH</p>
-                    <button class=" buyButton btn btn-dark" >Add to cart</button>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="product-list col-md-4">
-                        <img src="https://images.pexels.com/photos/2833216/pexels-photo-2833216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Exotic Squirrel" alt="Exotic Squirrel" class=" product-image rounded">
-                        <h3 class="mt-2">Exotic Squirrels</h3>
-                        <p>Unique and rare companions.</p>
-                        <p>  PID: 2224RFRH</p>
-                        <button class=" buyButton btn btn-dark" >Add to cart</button>
-                    </div>
-                    <!-- Product 3 -->
-                    <div class="product-list col-md-4">
-                        <img src="img/robo-squirrel.png" title="Robot Squirrel" alt="Robot Squirrel" class=" product-image rounded">
-                        <h3 class="mt-2">Robot Squirrel</h3>
-                        <p>Im scared, we will pay you to buy this off us.</p>
-                        <p>  PID: 0007SFFH</p>
-                        <button class=" buyButton btn btn-dark" >Add to cart</button>
-                    </div>
-                    <div class="product-list col-md-4">
-                        <img src="img/accessories.png" title="Squirrel Accessories" alt="Squirrel Accessories" class=" product-image rounded">
-                        <h3 class="mt-2">Squirrel Accessories</h3>
-                        <p>Treats, habitats, and toys!</p>
-                        <p>  PID: 2222CFHE</p>
-                        <button class=" buyButton btn btn-dark" >Add to cart</button>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        
-        <section id="contact" class="py-5">
-            <div class="container text-center">
-                <h2>Contact Us</h2>
-                <p>Have questions or want to adopt a squirrel? Reach out to us!</p>
-                
-                <form class="mt-4" id="contact-form">
-                    
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" onblur="validateName()">
-                    </div>
-            
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumber" placeholder="123 456 7890" onblur="validatePhoneNumber()">
-                    </div>
-            
-                    <div class="mb-3">
-                        <label class="form-label">Reason for Message</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="general" value="general" onchange="updateStatus()">
-                            <label class="form-check-label" for="general">General Inquiry</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="pricing" value="pricing" onchange="updateStatus()">
-                            <label class="form-check-label" for="pricing">Pricing</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="product-info-radio" value="product" onchange="updateStatus()">
-                            <label class="form-check-label" for="product-info-radio">Product Info</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="shipping" value="shipping" onchange="updateStatus()">
-                            <label class="form-check-label" for="shipping">Shipping</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="reason" id="other" value="other" onchange="updateStatus()">
-                            <label class="form-check-label" for="other">Other</label>
-                        </div>
-                    </div>
-        
-                    
-                        <div class="mb-3" id="product-id-field">
-                            <label for="productId" class="hidden" id="product-info-label">Product ID</label>
-                            <input type="text" class="hidden" id="productId" placeholder="Enter Product ID" onblur="validateProductID()">
-                        </div>
-                    
-                    
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" onblur="validateMessage()"></textarea>
-                    </div>
-            
-                    <button type="button" class="btn btn-primary" id="send-button">Send</button>
-                </form>
-            </div>
-        </section>
-        
-        
-
-
-
-        <section id="references">
-            <a name="references"></a>
-            <div class="container refDiv">
-                <h2 class="text-center mb-4 references-heading">References</h2>
-                <p class="text-center mb-4 references-text">
-                    Below are the sources of the images used on this website. All images were obtained from Pexels unless otherwise noted.
-                </p>
-        
-                <ul class="list-group">
-                    <li class="list-group-item bg-success references-list-item ">
-                        <strong>Banner Image:</strong> 
-                        <a href="https://images.pexels.com/photos/97541/pexels-photo-97541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                            Squirrel in forest (Pexels)
-                        </a>
+                <!-- Updated class for Bootstrap 4 -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a id="about-link" class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="list-group-item bg-success references-list-item ">
-                        <strong>Icon:</strong> 
-                        <a href="https://www.favicon.cc/" target="_blank" class="references-link">
-                            Made through Favicon.cc
-                        </a>
+                    <li class="nav-item">
+                        <a id="products-link" class="nav-link" href="#products">Products</a>
                     </li>
-                    <li class="list-group-item bg-success references-list-item">
-                        <strong>About Page:</strong>
-                        <ul class="list-unstyled ps-4">
-                            <li>
-                                <a href="https://images.pexels.com/photos/29451082/pexels-photo-29451082/free-photo-of-squirrel-in-autumn-tree-with-colorful-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Squirrel in autumn tree (Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/314865/pexels-photo-314865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Squirrel on ground (Pexels)
-                                </a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a id="contact-link" class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="list-group-item bg-success references-list-item">
-                        <strong>Team Members:</strong>
-                        <ul class="list-unstyled bg-success ps-4">
-                            <li>
-                                <a href="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Alex (edited from Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/9077349/pexels-photo-9077349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    BoredGuy (edited from Pexels)
-                                </a>
-                            </li>
-                            <li>Founder image: taken by me</li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item bg-success references-list-item">
-                        <strong>Products:</strong>
-                        <ul class="list-unstyled ps-4">
-                            <li>
-                                <a href="https://images.pexels.com/photos/417328/pexels-photo-417328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Domestic Squirrel (Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/2833216/pexels-photo-2833216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Exotic Squirrel (Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/1797100/pexels-photo-1797100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Robot Squirrel (edited from Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/114121/pexels-photo-114121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Squirrel Accessories - nuts (edited from Pexels)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://images.pexels.com/photos/3362697/pexels-photo-3362697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
-                                    Squirrel Accessories - hamster house (edited from Pexels)
-                                </a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a id="references-link" class="nav-link" href="#references">References</a>
                     </li>
                 </ul>
-        
-                
             </div>
-            <div class=" container">
+        </nav>
+        <h1 id="dynamic-message"></h1>
+    </header>
+
+    <section id="about" class="py-5">
+        <a name="about"></a>
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <div id="para" class="parallax-img"></div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p id="about_description">
+                        Named after the adopted father of our founder, Jared's Squirrel Emporium is dedicated to connecting squirrel enthusiasts with 
+                        the quirkiest and most adorable squirrels in the world. If you're looking 
+                        for a friendly companion, we've got you covered. Founded on the principles of love for squirrels and care 
+                        for their well-being, our emporium strives to bring joy to every squirrel lover's life.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img id="Squirrel-about" src="https://images.pexels.com/photos/29451082/pexels-photo-29451082/free-photo-of-squirrel-in-autumn-tree-with-colorful-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Squirrel on tree" title="Squirrel on tree" class="rounded">
+                    <p class="mt-2">A playful squirrel enjoying its life.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h3 class="text-center">Meet Our Team</h3>
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <img id="ceo" src="img/ceo.png" title="That's me!" alt="Profile of Jared" class="about-photo rounded-circle">
+                    <h4 class="mt-3">Faseeh N.</h4>
+                    <p><strong>Founder & Squirrel Enthusiast</strong></p>
+                    <p>
+                        Faseeh started this emporium in 2004 to share his lifelong passion for squirrels.
+                        At the age of 19, he was found by a family of squirrels and raised by them. 
+                        His mission is to help people find their perfect squirrel companions. 
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img title="Kindergartener playing" src="img/AlexImage.jpg" alt="Profile of Alex" class="about-photo rounded-circle">
+                    <h4 class="mt-3">Alex T.</h4>
+                    <p><strong>Operations Manager</strong></p>
+                    <p>
+                        Alex is the powerhouse of the company. During Lunch recess and after school, she ensures everything runs smoothly at the emporium. From inventory 
+                        management to customer satisfaction, Alex's relentless dedication keeps our squirrels 
+                        and customers happy.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="img/boredGuy.png" title="bored man sits at desk" alt="Profile of Mia" class="about-photo rounded-circle">
+                    <h4 class="mt-3">Jackson E.</h4>
+                    <p><strong>Creative Director</strong></p>
+                    <p>
+                        Jackson's creativity is behind our wonderful branding and marketing. He loves designing 
+                        campaigns that capture the unique personalities of our squirrel companions. His enthusiasm 
+                        and creativity inspires us all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <a name="products"></a>
+        <div class="container">
+            <h2 class="text-center">Our Products</h2>
+            <p class="text-center">Explore our range of squirrel companions and accessories!</p>
+            <div class="row text-center mt-4">
+                <!-- Product 1 -->
+                <div class="product-list col-md-4">
+                    <img src="https://images.pexels.com/photos/417328/pexels-photo-417328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Domestic Squirrel" alt="Domestic Squirrel" class="product-image rounded">
+                    <h3 class="mt-2">Domestic Squirrels</h3>
+                    <p>Friendly and perfect for cuddles!</p>
+                    <p>PID: 2213FFGH</p>
+                    <button class="buyButton btn btn-dark">Add to cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-list col-md-4">
+                    <img src="https://images.pexels.com/photos/2833216/pexels-photo-2833216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Exotic Squirrel" alt="Exotic Squirrel" class="product-image rounded">
+                    <h3 class="mt-2">Exotic Squirrels</h3>
+                    <p>Unique and rare companions.</p>
+                    <p>PID: 2224RFRH</p>
+                    <button class="buyButton btn btn-dark">Add to cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-list col-md-4">
+                    <img src="img/robo-squirrel.png" title="Robot Squirrel" alt="Robot Squirrel" class="product-image rounded">
+                    <h3 class="mt-2">Robot Squirrel</h3>
+                    <p>Im scared, we will pay you to buy this off us.</p>
+                    <p>PID: 0007SFFH</p>
+                    <button class="buyButton btn btn-dark">Add to cart</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-list col-md-4">
+                    <img src="img/accessories.png" title="Squirrel Accessories" alt="Squirrel Accessories" class="product-image rounded">
+                    <h3 class="mt-2">Squirrel Accessories</h3>
+                    <p>Treats, habitats, and toys!</p>
+                    <p>PID: 2222CFHE</p>
+                    <button class="buyButton btn btn-dark">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to adopt a squirrel? Reach out to us!</p>
+            <form class="mt-4" id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" onblur="validateName()">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="123 456 7890" onblur="validatePhoneNumber()">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Reason for Message</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reason" id="general" value="general" onchange="updateStatus()">
+                        <label class="form-check-label" for="general">General Inquiry</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reason" id="pricing" value="pricing" onchange="updateStatus()">
+                        <label class="form-check-label" for="pricing">Pricing</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reason" id="product-info-radio" value="product" onchange="updateStatus()">
+                        <label class="form-check-label" for="product-info-radio">Product Info</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reason" id="shipping" value="shipping" onchange="updateStatus()">
+                        <label class="form-check-label" for="shipping">Shipping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reason" id="other" value="other" onchange="updateStatus()">
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+                <div class="mb-3" id="product-id-field">
+                    <label for="productId" class="hidden" id="product-info-label">Product ID</label>
+                    <input type="text" class="hidden" id="productId" placeholder="Enter Product ID" onblur="validateProductID()">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" onblur="validateMessage()"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="send-button">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="references">
+        <a name="references"></a>
+        <div class="container refDiv">
+            <h2 class="text-center mb-4 references-heading">References</h2>
+            <p class="text-center mb-4 references-text">
+                Below are the sources of the images used on this website. All images were obtained from Pexels unless otherwise noted.
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item bg-success references-list-item">
+                    <strong>Banner Image:</strong> 
+                    <a href="https://images.pexels.com/photos/97541/pexels-photo-97541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                        Squirrel in forest (Pexels)
+                    </a>
+                </li>
+                <li class="list-group-item bg-success references-list-item">
+                    <strong>Icon:</strong> 
+                    <a href="https://www.favicon.cc/" target="_blank" class="references-link">
+                        Made through Favicon.cc
+                    </a>
+                </li>
+                <li class="list-group-item bg-success references-list-item">
+                    <strong>About Page:</strong>
+                    <ul class="list-unstyled ps-4">
+                        <li>
+                            <a href="https://images.pexels.com/photos/29451082/pexels-photo-29451082/free-photo-of-squirrel-in-autumn-tree-with-colorful-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Squirrel in autumn tree (Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/314865/pexels-photo-314865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Squirrel on ground (Pexels)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-group-item bg-success references-list-item">
+                    <strong>Team Members:</strong>
+                    <ul class="list-unstyled bg-success ps-4">
+                        <li>
+                            <a href="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Alex (edited from Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/9077349/pexels-photo-9077349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                BoredGuy (edited from Pexels)
+                            </a>
+                        </li>
+                        <li>Founder image: taken by me</li>
+                    </ul>
+                </li>
+                <li class="list-group-item bg-success references-list-item">
+                    <strong>Products:</strong>
+                    <ul class="list-unstyled ps-4">
+                        <li>
+                            <a href="https://images.pexels.com/photos/417328/pexels-photo-417328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Domestic Squirrel (Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/2833216/pexels-photo-2833216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Exotic Squirrel (Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/1797100/pexels-photo-1797100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Robot Squirrel (edited from Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/114121/pexels-photo-114121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Squirrel Accessories - nuts (edited from Pexels)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://images.pexels.com/photos/3362697/pexels-photo-3362697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank" class="references-link">
+                                Squirrel Accessories - hamster house (edited from Pexels)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
             <p class="mt-4 references-text">All images were used in compliance with copyright-free requirements.</p>
             <p class="references-footer">Copyright © 2024 Jared's Squirrel Emporium. All rights reserved.</p>
-            </div>
-            
-        </section>
-        
-        
-        
-        <a href="#top"><button id="back-to-top" class="btn btn-dark position-fixed">Top</button></a>
+        </div>
+    </section>
 
+    <a href="#top"><button id="back-to-top" class="btn btn-dark position-fixed">Top</button></a>
 
-
+    <!-- Include jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Ensure you include Bootstrap 4 JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-jrX6pkiKrvd7zXrPApXjHyrRPEYtN/xlP15iMDQYefZN0M1BLJyEeSPq+WkVJwUI" crossorigin="anonymous"></script>
 </body>
 </html>

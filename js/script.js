@@ -2,8 +2,8 @@ const today = new Date().getDay();
 function dayHello(){
     var today = new Date().getDay();
 
-    switch(today){//Switch is easier than all those if statements. 
-        case 0://it is also easier to put the whole thing in one line instead of using an extra variable.
+    switch(today){
+        case 0:
             document.getElementById('dynamic-message').innerHTML = "🥜 Welcome to our store on this fine Sunday! 🥜";
             break;
         case 1:
@@ -26,71 +26,63 @@ function dayHello(){
             break;
         default:
             document.getElementById('dynamic-message').innerHTML = "🥜 Welcome to our store! 🥜";
-        }
+    }
 }
 dayHello();
 
-
 function scroll(){
-    t= window.scrollY;
-    para= document.getElementById('para');
-    m=-.25;
-    b= 0;
-    newY = m*t + b;
+    t = window.scrollY;
+    para = document.getElementById('para');
+    m = -0.25;
+    b = 0;
+    newY = m * t + b;
     para.style.backgroundPositionY = newY + 'px';
 
-
-
-
     var t = window.scrollY;
-   var nav= document.getElementById('nav');
+    var nav = document.getElementById('nav');
 
-   var l1= document.getElementById('about-link');
-   var l2= document.getElementById('products-link');
-   var l3= document.getElementById('contact-link');
-   var l4= document.getElementById('references-link');
+    var l1 = document.getElementById('about-link');
+    var l2 = document.getElementById('products-link');
+    var l3 = document.getElementById('contact-link');
+    var l4 = document.getElementById('references-link');
 
+    var s1 = document.getElementById('about');
+    var s2 = document.getElementById('products');
+    var s3 = document.getElementById('contact');
+    var s4 = document.getElementById('references');
 
-   var s1= document.getElementById('about');
-   var s2= document.getElementById('products');
-   var s3= document.getElementById('contact');
-   var s4= document.getElementById('references');
+    var t1 = s1.offsetTop;
+    var t2 = s2.offsetTop;
+    var t3 = s3.offsetTop;
+    var t4 = s4.offsetTop;
 
-   var t1= s1.offsetTop;
-   var t2= s2.offsetTop;
-   var t3= s3.offsetTop;
-   var t4= s4.offsetTop;
+    l1.style.fontStyle = 'normal';
+    l2.style.fontStyle = 'normal';   
+    l3.style.fontStyle = 'normal';
+    l4.style.fontStyle = 'normal';
 
-    l1.style.fontStyle= 'normal';
-    l2.style.fontStyle= 'normal';   
-    l3.style.fontStyle= 'normal';
-    l4.style.fontStyle= 'normal';
+    l1.style.fontWeight = 'normal';
+    l2.style.fontWeight = 'normal';  
+    l3.style.fontWeight = 'normal';
+    l4.style.fontWeight = 'normal';
 
-    l1.style.fontWeight= 'normal';
-    l2.style.fontWeight= 'normal';  
-    l3.style.fontWeight= 'normal';
-    l4.style.fontWeight= 'normal';
-
-
-   if(t>t4){
-    l4.style.fontStyle= 'italic';
-    l4.style.fontWeight= 'bold';
-   } else if (t> t3){
-    l3.style.fontStyle= 'italic';
-    l3.style.fontWeight= 'bold';
-   } else if (t> t2){
-    l2.style.fontStyle= 'italic';
-    l2.style.fontWeight= 'bold';
-   }    else if (t> t1){
-    l1.style.fontStyle= 'italic';
-    l1.style.fontWeight= 'bold';
-   }
-
+    if(t > t4){
+        l4.style.fontStyle = 'italic';
+        l4.style.fontWeight = 'bold';
+    } else if (t > t3){
+        l3.style.fontStyle = 'italic';
+        l3.style.fontWeight = 'bold';
+    } else if (t > t2){
+        l2.style.fontStyle = 'italic';
+        l2.style.fontWeight = 'bold';
+    } else if (t > t1){
+        l1.style.fontStyle = 'italic';
+        l1.style.fontWeight = 'bold';
+    }
 }
 
-
-
-function updateStatus(){var productChoice = document.getElementById('product-info-radio');
+function updateStatus(){
+    var productChoice = document.getElementById('product-info-radio');
     var prodChoiceLabel = document.getElementById('product-info-label');
     var prodInput = document.getElementById('productId');
     
@@ -104,13 +96,11 @@ function updateStatus(){var productChoice = document.getElementById('product-inf
     }
 }
 
-
-
 function validateName() {
     const nameField = document.getElementById("name");
-    var name =nameField.value;
+    var name = nameField.value;
     
-    if (name.length >4 && isNaN(name)){
+    if (name.length > 4 && isNaN(name)){
         nameField.style.borderColor = "green";
     } else {
         nameField.style.borderColor = "red";
