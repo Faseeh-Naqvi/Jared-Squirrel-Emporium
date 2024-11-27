@@ -1,10 +1,9 @@
-.parallax {
-    background-image: url('img/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
+.hidden{
+    display: none;
 }
-
+.visible{
+    display: block;
+}
 #banner{ 
     width: 100%; 
     margin-top: 50px;
@@ -16,7 +15,7 @@
 }
 .button:hover {
     background-color: #555;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ;
 }
 .parallax-img{
     width: 100%;
@@ -93,10 +92,51 @@ width: auto;
 
 @keyframes moveUp{
     0%{ padding-top:0px;}
-    100%{padding-top:200px;}
+    100%{padding-top:200px; padding-bottom: 100px;}
 }
 
 #back-to-top:hover{
     position: relative;
-    animation: moveUp 5s;
+    animation: moveUp 3s;
+}
+
+
+
+
+
+.references-section {
+    background-color: #8a7f71; /* Light beige background */
+}
+
+.references-heading {
+    color: #e5cbb3; /* Main heading color */
+}
+
+.references-text {
+    color: #e5cbb3; /* Text color for descriptions */
+}
+
+.references-footer {
+    color: #ffffff; /* Footer color */
+    font-weight: bold;
+}
+
+.references-list-item {
+    background-color: #f9f4ef; /* Slightly lighter beige for list items */
+}
+.references-link {
+    color: #ffffff; /* Link color */
+    
+}
+
+.references-link:hover {
+    color: #77604c; /* Link color on hover */
+    
+}
+.ref-contain{
+    background-color: blanchedalmond;
+}
+
+.refDiv{
+    padding-bottom: 250px;
 }

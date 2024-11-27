@@ -66,14 +66,84 @@ function scroll(){
     l3.style.fontStyle= 'normal';
     l4.style.fontStyle= 'normal';
 
+    l1.style.fontWeight= 'normal';
+    l2.style.fontWeight= 'normal';  
+    l3.style.fontWeight= 'normal';
+    l4.style.fontWeight= 'normal';
+
+
    if(t>t4){
     l4.style.fontStyle= 'italic';
+    l4.style.fontWeight= 'bold';
    } else if (t> t3){
     l3.style.fontStyle= 'italic';
+    l3.style.fontWeight= 'bold';
    } else if (t> t2){
     l2.style.fontStyle= 'italic';
+    l2.style.fontWeight= 'bold';
    }    else if (t> t1){
     l1.style.fontStyle= 'italic';
+    l1.style.fontWeight= 'bold';
    }
 
+}
+
+
+
+function updateStatus(){var productChoice = document.getElementById('product-info-radio');
+    var prodChoiceLabel = document.getElementById('product-info-label');
+    var prodInput = document.getElementById('productId');
+    
+    if (productChoice.checked){
+        prodChoiceLabel.className = 'form-label visible';
+        prodInput.className = 'form-control visible';
+    }
+    else{
+        prodChoiceLabel.className = 'hidden';
+        prodInput.className = 'hidden';
+    }
+}
+
+
+
+function validateName() {
+    const nameField = document.getElementById("name");
+    var name =nameField.value;
+    
+    if (name.length >4 && isNaN(name)){
+        nameField.style.borderColor = "green";
+    } else {
+        nameField.style.borderColor = "red";
+    }
+}
+
+function validatePhoneNumber() {
+    const phoneField = document.getElementById("phoneNumber");
+    const isValid = /^\d{3}\s\d{3}\s\d{4}$/.test(phoneField.value);
+    if (isValid) {
+        phoneField.style.borderColor = "green";
+    } else {
+        phoneField.style.borderColor = "red";
+    }
+}
+
+function validateProductID() {
+    const productField = document.getElementById("productId");
+    const validProductIDs = ["2213FFGH", "2224RFRH", "0007SFFH", "2222CFHE"];
+    const isValid = validProductIDs.includes(productField.value);
+    if (isValid) {
+        productField.style.borderColor = "green";
+    } else {
+        productField.style.borderColor = "red";
+    }
+}
+
+function validateMessage() {
+    const messageField = document.getElementById("message");
+
+    if (messageField.value.length >= 10 && messageField.value.length <= 30) {
+        messageField.style.borderColor = "green";
+    } else {
+        messageField.style.borderColor = "red";
+    }
 }
