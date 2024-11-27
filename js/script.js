@@ -95,8 +95,8 @@ function updateStatus(){var productChoice = document.getElementById('product-inf
     var prodInput = document.getElementById('productId');
     
     if (productChoice.checked){
-        prodChoiceLabel.className = 'form-label visible';
-        prodInput.className = 'form-control visible';
+        prodChoiceLabel.className = 'form-label';
+        prodInput.className = 'form-control';
     }
     else{
         prodChoiceLabel.className = 'hidden';
